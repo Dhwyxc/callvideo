@@ -41,7 +41,7 @@ jQuery(function(){
 
     var localVideo = document.getElementById('localVideo');
     var remoteVideo = document.getElementById('remoteVideo');
-    
+
     var callButton = $('#callButton');
     var answerCallButton = $('#answerCallButton');
     var rejectCallButton = $('#rejectCallButton');
@@ -82,11 +82,11 @@ jQuery(function(){
 
     //RECEIVE CALL
     client.on('incomingcall', function(incomingcall){
-
-        $('#incoming-call-notice').show();
+        
+        // $('#incoming-call-notice').show();
         currentCall = incomingcall;
         settingCallEvent(currentCall, localVideo, remoteVideo, callButton, answerCallButton, endCallButton, rejectCallButton);
-
+        
         callButton.hide();
         answerCallButton.show();
         rejectCallButton.show();
@@ -95,6 +95,7 @@ jQuery(function(){
 
     //Event handler for buttons
     answerCallButton.on('click', function(){
+
         $(this).hide();
         rejectCallButton.hide();
         endCallButton.show();
