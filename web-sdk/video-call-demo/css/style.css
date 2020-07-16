@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a:hover .card.tourGuides {
+  -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.25) !important;
+          box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.25) !important;
+}
+
+a h3,
+a #position {
+  color: black;
+}
+
+a .card.tourGuides {
+  width: 250px;
+  -webkit-transition: -webkit-box-shadow .3s ease-in-out;
+  transition: -webkit-box-shadow .3s ease-in-out;
+  transition: box-shadow .3s ease-in-out;
+  transition: box-shadow .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
+}
+
+a .card.tourGuides .tourGuides__img img {
+  position: relative;
+  right: 16px;
+}
+
+a .card.tourGuides .tourGuides__info h3 {
+  font-size: 20px;
+  font-weight: 1000;
+}
+
+a .card.tourGuides .tourGuides__info #position {
+  font-weight: 500;
+}
+/*# sourceMappingURL=style.css.map */
